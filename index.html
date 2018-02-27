@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>Simon</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='src/style/simon.css' />
+</head>
+
+<body>
+  <div class="container">
+  <div class="simon">
+    <div id="bodyoutter"></div>
+    <div class="simonbutton" id="red"></div>
+    <div class="simonbutton" id="green"></div>
+    <div class="simonbutton" id="yellow"></div>
+    <div class="simonbutton" id="blue"></div>
+    <div id="bodycenter"></div>
+    <div class="simontitle">Simon&reg;</div>
+    <div class="switch">
+      <span class="switchoff">Off</span>
+      <label class="boxswitch">
+        <input id="power" type="checkbox"></input>
+      <span class="slider"></span>
+      </label>
+      <div class="switchon">On</div>
+    </div>
+    <div class="start">
+      <span id="startposition">Start</span>
+      <button id="startbutton" type="button" </button>
+    </div>
+    <div class="strict">
+      <span id="strictposition">Strict</span>
+      <button id="strictbutton" type="button"></button>
+    </div>
+    <div id="powerled"></div>
+    <div class="digitview">
+      <input id="digits" type="text" placeholder="--"></input>
+    </div>
+  </div>
+</div>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.1/Pizzicato.min.js'></script>
+<script src='src/js/app.js'></script>
+</html>
