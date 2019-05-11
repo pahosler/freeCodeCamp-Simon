@@ -186,7 +186,7 @@ var noise = {
   }
 })});
 
-['mousedown','ontouchstart'].forEach(function(e){$button.green.addEventListener(e,function(){
+['mousedown'].forEach(function(e){$button.green.addEventListener(e,function(){
   if(!$button.power.checked || _game.user === "off"){
     return;
   }
@@ -194,7 +194,7 @@ var noise = {
   noise.green.play();
 })});
 
-['mouseup','ontouchend'].forEach(function(e){$button.green.addEventListener(e, function() {
+['mouseup'].forEach(function(e){$button.green.addEventListener(e, function() {
   if (!$button.power.checked || _game.user === "off") {
     return;
   } else {
