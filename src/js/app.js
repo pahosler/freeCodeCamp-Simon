@@ -167,7 +167,7 @@ var noise = {
 // to-do fix the touch screen interface
 // to-do fix mobile audio not playing
 // bind events
-['mousedown','touchstart'].forEach(function(e){$button.blue.addEventListener(e,function(){
+['mousedown','ontouchstart'].forEach(function(e){$button.blue.addEventListener(e,function(){
   if(!$button.power.checked || _game.user === "off"){
     return;
   }
@@ -175,7 +175,7 @@ var noise = {
   noise.blue.play();
 })});
 
-['mouseup','touchend'].forEach(function(e){$button.blue.addEventListener(e, function() {
+['mouseup','ontouchend'].forEach(function(e){$button.blue.addEventListener(e, function() {
   if (!$button.power.checked || _game.user === "off") {
     return;
   } else {
@@ -205,7 +205,7 @@ var noise = {
   }
 })});
 
-['mousedown','touchstart'].forEach(function(e){$button.red.addEventListener(e,function(){
+['mousedown','ontouchstart'].forEach(function(e){$button.red.addEventListener(e,function(){
   if(!$button.power.checked || _game.user === "off"){
     return;
   }
@@ -213,7 +213,7 @@ var noise = {
   noise.red.play();
 })});
 
-['mouseup','touchend'].forEach(function(e){$button.red.addEventListener(e, function() {
+['mouseup','ontouchend'].forEach(function(e){$button.red.addEventListener(e, function() {
   if (!$button.power.checked || _game.user === "off") {
     return;
   } else {
